@@ -1,0 +1,76 @@
+* {
+  padding:0;
+  margin:0;
+}
+body {
+  font-family: sans-serif,monospace, Helvetica;
+}
+
+/*decoracion header*/
+header{
+  top:0;
+  min-height: 75px;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #40596b;
+  @media (max-width: 600px) {
+    flex-wrap: wrap;
+  }
+}
+header nav {
+text-align: center;
+}
+header ul {
+    width: 100%;
+}
+
+header nav ul li {
+      list-style-type: none;
+      margin: 10px;
+      margin-bottom: 10px;
+      margin-top: 10px;
+      /*el inline organiza los elementos para que queden seguidos*/
+      display: inline;
+}
+
+header nav ul li a {
+color: #ffd05a;
+text-decoration: none;
+/*equivalente a h3*/
+font-size: 1.75rem;
+}
+/*cambiar de color la letra al pasar por encima el cursor*/
+header nav ul li a:hover {
+  color:white;
+}
+
+
+/*finaliza la decoracion del header*/
+
+/*Decoracion de acerca*/
+#acerca{
+  margin: 2%;
+}
+
+/*Finaliza la decoracion de acerca*/
+
+/*Decoracion de como funciona*/
+
+#margenTriple {
+  margin-right: 10%;
+  margin-left: 10%;
+  align-items: center;
+
+}
+
+/*Finaliza la decoracion de como funciona*/
+footer {
+  color:white;
+  background-color: #40596b;
+  align-items: center;
+}
+footer a {
+  color:white;
+}
