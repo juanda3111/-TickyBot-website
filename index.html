@@ -2,7 +2,10 @@
 <html>
 <head>
     <title>TickyBot - Your Support Ticket Slack Bot</title>
-
+<!--jquery-->
+    <script type="text/javascript" src="jquery/jquery-3.3.1.min.js"></script>
+<!--version online del jquery-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <!--bootstrap-->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
 <!--Mi css-->
@@ -89,6 +92,31 @@ him/her to open a support ticket so other admins could look into the issue.</p>
 <!--fin del div de descripcion-->
 
 <!--div de Como funciona-->
+<a id="back2Top" title="Back to top" href="#">
+  <img src="img/top.svg" id="back2top"></a>
+
+<script>
+/*Scroll to top when arrow up clicked BEGIN*/
+
+$(window).scroll(function() {
+    var height = $(window).scrollTop();
+    if (height > 100) {
+        $('#back2Top').fadeIn();
+    } else {
+        $('#back2Top').fadeOut();
+    }
+});
+$(document).ready(function() {
+    $("#back2Top").click(function(event) {
+        event.preventDefault();
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+        return false;
+    });
+
+});
+ /*Scroll to top when arrow up clicked END*/
+
+</script>
 <div class="row" style="background-color:#90ddaa;" id="comoFunciona">
 
 <div class="row">
@@ -160,6 +188,7 @@ him/her to open a support ticket so other admins could look into the issue.</p>
 </footer>
 <!--fin del footer-->
 </body>
+
 
 
 </html>
