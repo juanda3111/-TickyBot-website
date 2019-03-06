@@ -8,9 +8,9 @@ body {
 
 /*decoracion header*/
 header{
-  top:0;
-  min-height: 75px;
-  padding: 0px 20px;
+
+  min-height: 65px;
+  padding: 0px 20px ;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -24,6 +24,7 @@ text-align: center;
 }
 header ul {
     width: 100%;
+
 }
 
 header nav ul li {
@@ -38,16 +39,52 @@ header nav ul li {
 header nav ul li a {
 color: #ffd05a;
 text-decoration: none;
-/*equivalente a h3*/
-font-size: 1.75rem;
+/*equivalente a un poquito mas q h3*/
+font-size: 1.85rem;
 }
 /*cambiar de color la letra al pasar por encima el cursor*/
 header nav ul li a:hover {
   color:white;
+  text-decoration: none;
+
 }
 
 
 /*finaliza la decoracion del header*/
+
+/*Decoracion de la intro*/
+#introduccion {
+  padding: 30px;
+}
+#introduccion #aaa {
+padding: 50px;
+}
+#introduccion #aaa h1 {
+  font-size: 7.35rem;
+}
+#introduccion #aaa h3 {
+  color:white;
+  padding: 15px;
+}
+
+button {
+  height: 70px;
+}
+
+/*Fin decoracion de la intro*/
+
+/*Decoracion de descripcion*/
+#tituloAcerca {
+  padding-bottom:30px;
+}
+p{
+  padding-bottom:30px;
+  font-size: 1.75rem;
+}
+
+
+/*Finaliza la decoracion de descripcion*/
+
 
 /*Decoracion de acerca*/
 #acerca{
@@ -56,25 +93,65 @@ header nav ul li a:hover {
 
 /*Finaliza la decoracion de acerca*/
 
+
 /*Decoracion de como funciona*/
 
+#tituloSeccion{
+  padding-bottom:80px;
+
+}
+
 #margenTriple {
+  margin-top: 30px;
   margin-right: 10%;
   margin-left: 10%;
   align-items: center;
 
 }
+.fondoAzul{
+  background-color:#40596b;
+}
+
+.fondoBlanco {
+  background-color:white;
+}
+.fondoBlanco p {
+  margin-bottom:30px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+#imagend3 {
+  margin:60px;
+}
 
 /*Finaliza la decoracion de como funciona*/
+
+/*Decoracion de Start using tickbot today*/
+#margen {
+  margin: 10px 25% 10px 25%;
+}
+#margen2 {
+  margin: 30px 30% 10px 30%;
+}
+/*Finaliza la decoracion de Start using tickbot today*/
+
+/*Decoracion del footer*/
 footer {
   color:white;
   background-color: #40596b;
   align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 footer a {
   color:white;
 }
 
+footer div p {
+font-size: 1.25rem;
+padding: 0px;
+}
 
 /*boton de volver al inicio*/
 

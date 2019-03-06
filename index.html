@@ -40,9 +40,9 @@
 
 <div class="row" style="background-color: #55c0ec;" id="introduccion">
 
-  <div class="col-md-6 ">
-    <div class="text-center">
-      <h1>TickyBot</h1>
+  <div class="col-md-6">
+    <div class="text-center" id="aaa">
+      <h1><strong>Ticky</strong>Bot</h1>
       <h3>Let your team manage their support tickets 100% inside Slack </h3>
       <button type="button" class="btn-cta btn-cta--light reveal-item reveal-item--visible" style="font-size:24px;width:50%; ">
     <img style="width: 15%;" src="img/slack.svg"> <span> Add to Slack </span>
@@ -55,7 +55,7 @@
 
   <div class="col-sm-6">
   <!--Imagen del robot-->
-  <img class="img-responsive" src="img/robot.svg">
+  <img class="img-responsive" src="img/robot.svg" style="margin:auto;">
   </img>
   </div>
 
@@ -64,24 +64,24 @@
 <!--final del div introduccion-->
 <!--div de descripcion-->
 <div class="row" id="acerca">
-  <div>
-      <h1 class="text-center">What Is TickyBot </h1>
+  <div >
+      <h1 class="text-center"id="tituloAcerca" >What Is TickyBot </h1>
   </div>
   <!--div primer texto -->
   <div class="col-sm-12">
     <div class="col-sm-6">
-      <p>TickyBot is a Slack Bot that lets you use support tickets on Slack.
+      <p class="textoAcerca">TickyBot is a Slack Bot that lets you use support tickets on Slack.
       This way, you don't need to leave your beloved
       channel to assist your users, if you don't feel like it.</p>
     </div>
     <div class="col-sm-6">
-      <p>With TickyBot you can easily check if you've received new tickets,
+      <p class="textoAcerca">With TickyBot you can easily check if you've received new tickets,
          change their status, or write a reply, and the ticket will instantly
           update itself on our site.</p>
     </div>
   </div>
   <!--Div texto 2 -->
-  <div class="">
+  <div style="margin:30px;">
     <p>Support requests shouldn't
        be handled through Slack's direct messages.
 Image about someone asking silly questions and the workplace admin asking
@@ -91,7 +91,8 @@ him/her to open a support ticket so other admins could look into the issue.</p>
 </div>
 <!--fin del div de descripcion-->
 
-<!--div de Como funciona-->
+
+<!--boton de devolverse arriba-->
 <a id="back2Top" title="Back to top" href="#">
   <img src="img/top.svg" id="back2top"></a>
 
@@ -117,52 +118,73 @@ $(document).ready(function() {
  /*Scroll to top when arrow up clicked END*/
 
 </script>
+<!--termina configuracion del boton de devolverse arriba-->
+
+
+<!--div de Como funciona-->
+
 <div class="row" style="background-color:#90ddaa;" id="comoFunciona">
 
 <div class="row">
   <div class="text-center">
-    <h1>How It Works</h1>
+      <h1 >How It Works</h1>
+
+
   </div>
 
   <div class="" id="margenTriple">
 
     <div class="col-sm-4">
       <div class="text-center">
-        <img src="img/workplace.svg">
-        <p>You can add TickyBot to your Slack
-           workplace by scrolling down or clicking here</p>
+        <div class="fondoAzul">
+          <img src="img/workplace.svg" id="imagend3" >
+          <div class="fondoBlanco">
+          <p>You can add TickyBot to your Slack
+           workplace by scrolling down or <a href="#">
+            clicking here</a></p>
+          </div>
+        </div>
+
       </div>
     </div>
 
     <div class="col-sm-4">
-      <img src="img/buble.svg">
+      <div class="fondoAzul">
+      <img src="img/buble.svg" id="imagend3">
       <div class="text-center">
+          <div class="fondoBlanco">
         <p>Your users can open a ticket by typing
-          /ticket and their message into the chat field</p>
+        <code>/ticket</code> and their message into the chat field </p>
+          </div>
       </div>
     </div>
+  </div>
 
     <div class="col-sm-4">
-  <img src="img/task.svg">
-  <div class="text-center">
-    <p>Your users can open a ticket by typing
-      /ticket and their message into the chat field</p>
-  </div>
-    </div>
+      <div class="fondoAzul">
+        <img src="img/task.svg" id="imagend3">
+        <div class="text-center">
+          <div class="fondoBlanco">
+            <p style="margin:10px;margin-top:-1px;">Once you or another admin solved their
+              problems you can type<code>/ticket
+               close #id</code> to close the ticket</p>
+          </div>
+        </div>
+      </div>
+   </div>
   </div>
  </div>
 </div>
-
 <!--fin del div de Como funciona-->
 
 
 <!--div de comienze a usarlo hoy-->
 <div class="row" id="comienze_a_usarlo">
   <div class="text-center">
-    <h1>Start Using TickyBot Today</h1>
+    <h1 id="tituloAcerca">Start Using TickyBot Today</h1>
 <!--texto 2-->
-  <div class="">
-    <p> TickyBot allows Slack teams to manage their
+  <div id="margen" >
+    <p > TickyBot allows Slack teams to manage their
        support tickets 100% inside Slack, without having
        to switch between different apps.</p>
   </div>
@@ -170,7 +192,10 @@ $(document).ready(function() {
 <img style="width: 15%;" src="img/slack.svg"> <span> Add to Slack </span>
   </button>
       <!--ultima texto de ese div-->
-  <p>... so you don't need to go back and forth with another app.</p>
+      <div id="margen2">
+          <p>... so you don't need to go back and forth with another app.</p>
+      </div>
+
   </div>
 
 </div>
@@ -178,9 +203,9 @@ $(document).ready(function() {
 
 <!--footer-->
 
-<footer class="site-footer">
-  <div class="container text-center">
-  <p>Made by <a href="https://github.com/juanda3111" target="_blank">juanda3111</a> </p>
+<footer class="site-footer" >
+  <div class="container text-center" >
+  <p style="font-size: 1.25rem;">Made by <a href="https://github.com/juanda3111" target="_blank">juanda3111</a> </p>
   <p>Source code is available on my <a href="https://github.com/juanda3111/-TickyBot-website" target="_blank"> GitHub page </a></p>
   <p>The app is not created by, affiliated with, or supported by Slack Technologies, Inc.</p>
 
